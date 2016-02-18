@@ -62,22 +62,22 @@ git clone下来上述git库，注意使用ssh协议，以保证接下来可以�
 # GitDisk文件夹配置
 
 1. 选中Git库文件夹，右键->服务->文件夹操作设置
-<br/><img src="1.png" width="500px"/>
+<br/><img src="resources/1.png" width="500px"/>
 
 2. 出现文件夹操作设置窗口如下：
-<br/><img src="2.png" width="500px"/>
+<br/><img src="resources/2.png" width="500px"/>
 
 3. 点击底部右边的“+”号，选取要附加的脚本，选择gitdisk.applescript
-<br/><img src="3.png" width="500px"/>
+<br/><img src="resources/3.png" width="500px"/>
 
 4. 选择完后，右边会出现刚才选择的脚本
-<br/><img src="4.png" width="500px"/>
+<br/><img src="resources/4.png" width="500px"/>
 
 5. 勾选左上角的“启用文件夹操作”，点击"是"
-<br/><img src="5.png" width="500px"/>
+<br/><img src="resources/5.png" width="500px"/>
 
 6. 最后的设置界面是这样的
-<br/><img src="6.png" width="500px"/>
+<br/><img src="resources/6.png" width="500px"/>
 
 配置完毕，接下来就是日常使用了。
 
