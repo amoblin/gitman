@@ -12,6 +12,15 @@
 if [ ! -d .git ]; then
    git init
 fi
+
+git stash
+
+git fetch
+git rebase origin/master
+
+git stash pop
+
 git add -A
 git commit -m "update content"
-git push
+git push origin master
+

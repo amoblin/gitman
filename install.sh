@@ -10,34 +10,50 @@
 #name_without_extension=`echo ${name%.*}`
 
 
-# Use colors, but only if connected to a terminal, and that terminal
-# supports them.
-if which tput >/dev/null 2>&1; then
-    ncolors=$(tput colors)
-fi
-if [ -t 1 ] && [ -n "$ncolors" ] && [ "$ncolors" -ge 8 ]; then
-    RED="$(tput setaf 1)"
-    GREEN="$(tput setaf 2)"
-    YELLOW="$(tput setaf 3)"
-    BLUE="$(tput setaf 4)"
-    BOLD="$(tput bold)"
-    NORMAL="$(tput sgr0)"
-else
-    RED=""
-    GREEN=""
-    YELLOW=""
-    BLUE=""
-    BOLD=""
-    NORMAL=""
-fi
+function info()
+{
+    printf "${BLUE}$1${NORMAL}"
+}
 
-# Only enable exit-on-error after the non-critical colorization stuff,
-# which may fail on systems lacking tput or terminfo
-set -e
+function error()
+{
+    printf "$1"
+}
 
-umask g-w,o-w
 
-printf "${BLUE}Cloning gitdisk...${NORMAL}\n"
+function init()
+{
+    # Use colors, but only if connected to a terminal, and that terminal
+    # supports them.
+    if which tput >/dev/null 2>&1; then
+        ncolors=$(tput colors)
+    fi
+    if [ -t 1 ] && [ -n "$ncolors" ] && [ "$ncolors" -ge 8 ]; then
+        RED="$(tput setaf 1)"
+        GREEN="$(tput setaf 2)"
+        YELLOW="$(tput setaf 3)"
+        BLUE="$(tput setaf 4)"
+        BOLD="$(tput bold)"
+        NORMAL="$(tput sgr0)"
+    else
+        RED=""
+        GREEN=""
+        YELLOW=""
+        BLUE=""
+        BOLD=""
+        NORMAL=""
+    fi
+
+    # Only enable exit-on-error after the non-critical colorization stuff,
+    # which may fail on systems lacking tput or terminfo
+    set -e
+    
+    umask g-w,o-w
+}
+
+init
+
+info "Cloning gitdisk...\n"
 hash git >/dev/null 2>&1 || {
     echo "Error: git is not installed"
     exit 1
@@ -50,20 +66,29 @@ if [ -d $TMP_PATH ]; then
 fi
 
 env git clone --depth=1 https://github.com/amoblin/gitdisk $TMP_PATH || {
-    printf "Error: git clone of gitdisk repo failed\n"
+    error "Error: git clone of gitdisk repo failed\n"
+
     exit 1
 }
 
 cd $TMP_PATH
 
-printf "${BLUE}Installing scripts...${NORMAL}\n"
+info "Installing scripts...\n"
 
 cp gitdisk-update /usr/local/bin
 chmod 755 /usr/local/bin/gitdisk-update
 sudo cp gitdisk-update.applescript "/Library/Scripts/Folder Action Scripts"
 
 printf "${GREEN}"
-echo ''
+echo '
+       _ _      _ _     _
+  __ _(_) |_ __| (_)___| | __
+ / _` | | __/ _` | / __| |/ /
+| (_| | | || (_| | \__ \   <
+ \__, |_|\__\__,_|_|___/_|\_\
+ |___/
+
+'
 echo 'Succeed! Done!'
 echo ''
-  printf "${NORMAL}"
+printf "${NORMAL}"
