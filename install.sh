@@ -58,11 +58,8 @@ cd $TMP_PATH
 
 printf "${BLUE}Installing scripts...${NORMAL}\n"
 
-if [ ! -d ~/bin ]; then
-    mkdir ~/bin
-fi
-
-cp gitdisk-update ~/bin
+cp gitdisk-update /usr/local/bin
+chmod 755 /usr/local/bin/gitdisk-update
 sudo cp gitdisk-update.applescript "/Library/Scripts/Folder Action Scripts"
 
 printf "${GREEN}"
