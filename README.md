@@ -1,5 +1,3 @@
-# README
-
 <!--
 create time: 2016-02-18 20:06:21
 Author: amoblin
@@ -10,7 +8,7 @@ This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.med
 
 # 需求背景
 
-设计师MM需要给开发GG切图，产品MM要给开发GG和设计师MM各种PRD文档，如何方便快速的传递文件呢？抛开QQ微信等IM和Email等传统方式，基于文件夹的现有解决方案有：
+设计师MM需要给开发GG切图，产品MM要给开发GG和设计师MM各种PRD文档，如何方便快速地同步文件呢？抛开QQ微信等IM和Email等传统方式，基于文件夹的现有解决方案有：
 
 1. 各种国内盘
 2. Dropbox
@@ -22,16 +20,16 @@ This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.med
 2. Dropbox在国内无法正常使用，要让所有参与者都使用VPN是不现实的。
 3. BitTorrent Sync可以说是目前最好的选择了：局域网P2P同步，没有隐私安全问题，普通免费版就够日常开发使用了，而且速度快。但我们在使用过程中发现总是出现丢文件的问题，个人怀疑是P2P的技术架构的问题导致，无法从根本上避免。
 
-在使用了一年多BitTorrent Sync以后，终于决定自己开发一款满足以下需求的产品：
+在使用了一年多BitTorrent Sync以后，在今天吃晚饭的时候终于决定自己开发一款满足以下需求的产品：
 
 1. 隐私安全，局域网同步
 2. 稳定，不丢文件
 3. 速度快
 4. 操作简单，不需要懂太多技术
 
-而这就是GitDisk。
+而这就是[GitDisk](https://github.com/amoblin/gitdisk)。
 
-# GitDisk：基于Git的网盘式文件夹同步软件
+# [GitDisk：基于Git的网盘式文件同步工具](https://github.com/amoblin/gitdisk)
 
 GitDisk的特点如下：
 
@@ -78,8 +76,10 @@ git clone下来上述git库，注意使用ssh协议，以保证接下来可以�
 5. 勾选左上角的“启用文件夹操作”，点击"是"
 <br/><img src="5.png" width="500px"/>
 
-6. 最后的设计界面是这样的
+6. 最后的设置界面是这样的
 <br/><img src="6.png" width="500px"/>
+
+配置完毕，接下来就是日常使用了。
 
 # GitDisk使用（产品MM或设计师MM操作）
 
@@ -92,3 +92,7 @@ git pull
 ```
 
 就酱紫~
+
+gitdisk GitHub地址：https://github.com/amoblin/gitdisk
+
+欢迎star, fork or pull request or giving suggestion!
