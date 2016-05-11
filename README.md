@@ -29,11 +29,11 @@ This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.med
 3. 速度快
 4. 操作简单，不需要懂太多技术
 
-而这就是[GitDisk](https://github.com/amoblin/gitdisk)。
+而这就是[GitWatch](https://github.com/amoblin/gitwatch)。
 
-# [GitDisk：基于Git的网盘式文件同步工具](https://github.com/amoblin/gitdisk)
+# [GitWatch：基于Git的网盘式文件同步工具](https://github.com/amoblin/gitwatch)
 
-GitDisk的特点如下：
+GitWatch的特点如下：
 
 1. 基于Git库做同步
 2. 稳定，不丢文件，可访问历史
@@ -42,12 +42,6 @@ GitDisk的特点如下：
 0. 目前只支持OSX系统
 
 具体如何使用呢？且看下文。
-
-# 安装GitDisk（这一步由开发GG来协助，这是一劳永逸的配置）
-
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/amoblin/gitdisk/master/install.sh)"
-```
 
 # Gitlab和Git配置（这一步由开发GG来协助，这是一劳永逸的配置）
 
@@ -61,33 +55,19 @@ git clone下来上述git库，注意使用ssh协议，以保证接下来可以�
 
 这些开发GG都懂滴~好机会注意把握哦~
 
-# GitDisk文件夹配置
+# 下载安装GitWatch
 
-1. 选中Git库文件夹，右键->服务->文件夹操作设置
-<br/><img src="resources/1.png" width="500px"/>
+https://github.com/amoblin/gitwatch/releases/download/0.4/GitWatch.app.zip
 
-2. 出现文件夹操作设置窗口如下：
-<br/><img src="resources/2.png" width="500px"/>
-
-3. 点击底部右边的“+”号，选取要附加的脚本，选择gitdisk.applescript
-<br/><img src="resources/3.png" width="500px"/>
-
-4. 选择完后，右边会出现刚才选择的脚本
-<br/><img src="resources/4.png" width="500px"/>
-
-5. 勾选左上角的“启用文件夹操作”，点击"是"
-<br/><img src="resources/5.png" width="500px"/>
-
-6. 最后的设置界面是这样的
-<br/><img src="resources/6.png" width="500px"/>
+然后把上述文件夹拖入GitWatch。
 
 配置完毕，接下来就是日常使用了。
 
-# GitDisk使用（产品MM或设计师MM操作）
+# GitWatch使用（产品MM或设计师MM操作）
 
 向Git库文件夹中添加文件即可，方式随意。
 
-# 获取到新添加的文件
+# 工程师获取文件更新
 
 ```
 git pull
@@ -95,6 +75,6 @@ git pull
 
 就酱紫~
 
-gitdisk GitHub地址：https://github.com/amoblin/gitdisk
+GitWatch GitHub地址：https://github.com/amoblin/gitwatch
 
 欢迎star, fork or pull request or giving suggestion!
