@@ -75,8 +75,14 @@ cd $TMP_PATH
 
 info "Installing scripts...\n"
 
-cp gitdisk-update /usr/local/bin
-chmod 755 /usr/local/bin/gitdisk-update
+if [ -d /usr/local/bin ]; then
+    sudo cp gitdisk-update /usr/bin
+    sudo chmod 755 /usr/bin/gitdisk-update
+else
+    sudo cp gitdisk-update /usr/local/bin
+    sudo chmod 755 /usr/local/bin/gitdisk-update
+fi
+
 sudo cp gitdisk-update.applescript "/Library/Scripts/Folder Action Scripts"
 
 printf "${GREEN}"
