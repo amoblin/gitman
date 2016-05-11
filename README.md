@@ -6,6 +6,8 @@ This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.med
 本文件由 Marboo<http://marboo.io> 模板文件 $MARBOO_HOME/.media/starts/default.md 创建
 -->
 
+<img src="gitwatch.png" width="400" />
+
 # 需求背景
 
 设计师MM需要给开发GG切图，产品MM要给开发GG和设计师MM各种PRD文档，如何方便快速地同步文件呢？抛开QQ微信等IM和Email等传统方式，基于文件夹的现有解决方案有：
