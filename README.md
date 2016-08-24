@@ -33,6 +33,10 @@ This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.med
 
 # [GitWatch：基于Git的网盘式文件同步工具](https://github.com/amoblin/gitwatch)
 
+GitWatch是一款基于Git的网盘式文件同步工具，配合局域网Gitlab作为数据交换中心，文件同步速度快。因为基于Git，所以可以保证数据的稳定可靠，不丢文件，并且可访问文件修改历史。使用起来也极为简单，启动GitWatch以后，把需要同步的文件夹拖拽到GitWatch界面中，然后文件夹里的任何文件修改或添加都会自动同步到Gitlab库中，开发就可以像拉取代码一样方便的获取到产品原型图PRD文档或者设计标注图或者切图啦。目前只支持OSX系统。
+
+![](screenshot.png)
+
 GitWatch的特点如下：
 
 1. 基于Git库做同步
