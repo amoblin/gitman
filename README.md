@@ -61,7 +61,7 @@ git clone下来上述git库，注意使用ssh协议，以保证接下来可以�
 
 # 下载安装GitWatch
 
-https://github.com/amoblin/gitwatch/releases/download/0.6/GitWatch.app.zip
+https://github.com/amoblin/gitwatch/releases/download/0.8/GitWatch_v0.8.dmg
 
 然后把上述文件夹拖入GitWatch。
 
