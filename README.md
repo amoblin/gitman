@@ -6,7 +6,7 @@ This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.med
 本文件由 Marboo<http://marboo.io> 模板文件 $MARBOO_HOME/.media/starts/default.md 创建
 -->
 
-![](gitwatchWORDS.png)
+Mac App Store下载：https://itunes.apple.com/cn/app/gitman/id1274940707?mt=12
 
 # 需求背景
 
@@ -29,15 +29,17 @@ This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.med
 3. 速度快
 4. 操作简单，不需要懂太多技术
 
-而这就是[GitWatch](https://github.com/amoblin/gitwatch)。
+而这就是[GitMan](https://github.com/amoblin/gitman)。
 
-# [GitWatch：基于Git的网盘式文件同步工具](https://github.com/amoblin/gitwatch)
+# [GitMan：基于Git的网盘式文件同步工具](https://github.com/amoblin/gitman)
 
-GitWatch是一款基于Git的网盘式文件同步工具，配合局域网Gitlab作为数据交换中心，文件同步速度快。因为基于Git，所以可以保证数据的稳定可靠，不丢文件，并且可访问文件修改历史。使用起来也极为简单，启动GitWatch以后，把需要同步的文件夹拖拽到GitWatch界面中，然后文件夹里的任何文件修改或添加都会自动同步到远端Git库中，开发就可以像拉取代码一样方便的获取到产品原型图PRD文档、设计标注图、资源切图等。一旦文件有了更新，开发可以实时获取通知提醒，大大降低了沟通成本，提高了工作效率。配合公司内部Gitlab使用，可保障数据的隐私安全。
+GitMan是一款基于Git的网盘式文件同步工具，配合局域网Gitlab作为数据交换中心，文件同步速度快。因为基于Git，所以可以保证数据的稳定可靠，不丢文件，并且可访问文件修改历史。使用起来也极为简单，启动GitMan以后，把需要同步的文件夹拖拽到GitMan界面中，然后文件夹里的任何文件修改或添加都会自动同步到远端Git库中，开发就可以像拉取代码一样方便的获取到产品原型图PRD文档、设计标注图、资源切图等。一旦文件有了更新，开发可以实时获取通知提醒，大大降低了沟通成本，提高了工作效率。配合公司内部Gitlab使用，可保障数据的隐私安全。
 
-![](screenshot.png)
+![](./resources/mas01.png)
+![](./resources/mas02.png)
+![](./resources/mas03.png)
 
-GitWatch的特点如下：
+GitMan的特点如下：
 
 1. 基于Git库做同步
 2. 稳定，不丢文件，可访问历史
@@ -67,15 +69,15 @@ git clone下来上述git库，注意使用ssh协议，以保证接下来可以�
 
 这些开发GG都懂滴~好机会注意把握哦~
 
-## 下载安装GitWatch
+## 下载安装GitMan
 
-https://github.com/amoblin/gitwatch/releases/download/0.8/GitWatch_v0.8.dmg
+https://itunes.apple.com/cn/app/gitman/id1274940707?mt=12
 
-然后把上述文件夹拖入GitWatch。
+下载安装启动后，把上述文件夹拖入GitMan。
 
 配置完毕，接下来就是日常使用了。
 
-## GitWatch使用（产品MM或设计师MM操作）
+## GitMan使用（产品MM或设计师MM操作）
 
 向Git库文件夹中添加文件即可，方式随意。
 
@@ -87,6 +89,6 @@ git pull
 
 就酱紫~
 
-GitWatch GitHub地址：https://github.com/amoblin/gitwatch
+GitMan GitHub地址：https://github.com/amoblin/gitman
 
 欢迎star, fork or pull request or giving suggestion!
