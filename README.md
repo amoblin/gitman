@@ -35,9 +35,7 @@ Mac App Store下载：https://itunes.apple.com/cn/app/gitman/id1274940707?mt=12
 
 GitMan是一款基于Git的网盘式文件同步工具，配合局域网Gitlab作为数据交换中心，文件同步速度快。因为基于Git，所以可以保证数据的稳定可靠，不丢文件，并且可访问文件修改历史。使用起来也极为简单，启动GitMan以后，把需要同步的文件夹拖拽到GitMan界面中，然后文件夹里的任何文件修改或添加都会自动同步到远端Git库中，开发就可以像拉取代码一样方便的获取到产品原型图PRD文档、设计标注图、资源切图等。一旦文件有了更新，开发可以实时获取通知提醒，大大降低了沟通成本，提高了工作效率。配合公司内部Gitlab使用，可保障数据的隐私安全。
 
-![](./resources/mas01.png)
-![](./resources/mas02.png)
-![](./resources/mas03.png)
+![](./resources/gitman01.png)
 
 GitMan的特点如下：
 
